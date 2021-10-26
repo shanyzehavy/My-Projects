@@ -1,0 +1,29 @@
+A. If done manually, we should have gone through all the players' list on the website (over 1000 players) 
+and click each player with only english letters in his name (25 players total)
+for each such player we should have looked for the word "Midfielder" or "midfielder" using ctrl f
+Lets try to assume how long that would have taken!
+one minute for each search action on each page
+times 25 pages
+plus the total go-over the entire players' list on the site - about 2 hours
+
+To sum up - abut 2.5 hours total for this kinda manual assignment
+
+
+B. Using bash scripts makes long procedures shorter and efficient with almost zero effort required from the user
+We could use the scripts for many long procedures, large scales fies, etc.... e.g:
+Opening a few chosen applications automatically when turning computer ON
+Delete the answers out of last years exams
+sign to a frontal lecture in the campus, via moodle site
+Going over our Downloads directory and delete previous semesters uneccesary files
+Creating a script with your own schedule - the script will open the moodle then enter the course-page then the zoom-link for the class righ on time! So youre never latr for your Zoom classes :)
+
+ 
+
+C. This could have done automatically by performing pretty much a similar idea, with a few changes:
+In order to perform the process every hour we will create a loop, which wil contain at the end of it a delay command for 1 hour, so that the script will perform the search action for the midfieldrs every hour
+Idea:
+LOOP {
+	FORMER SCRIPT
+	DELAY COMMAND
+}
+To avoid multiple accourance of players each time we perform this process we will overide the former results file (using > instead of >>)
